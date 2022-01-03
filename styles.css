@@ -7,7 +7,7 @@ header {
     background-image: url("images/top-banner.png");
     background-repeat: no-repeat;
 }
-header h1 {
+.sec-head {
     font-size: 50px;
     font-weight: 500;
     line-height: 1.3em;
@@ -26,7 +26,7 @@ header h1 {
     grid-gap: 30px;
 }
 .right-container img {
-    width: 100%;
+    width: 90%;
 }
 .btn-bg {
     background-image: linear-gradient(45deg, lightsalmon, tomato);
@@ -60,7 +60,7 @@ header h1 {
     transition: left linear 250ms;
 }
 
-header h3 {
+h3 {
     font-size: 24px;
     font-weight: 500;
     margin: 25px 0;
@@ -70,8 +70,32 @@ header h3 {
     flex-direction: column;
     justify-content: center;
 }
+section.second {
+    margin-top: 50px;
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 @media only screen and (max-width: 769px) {
+    header {
+        padding: 40px 20px;
+    }
+    .sec-head {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 20px;
+    }
     .row {
         grid-template-columns: 1fr;
+    }
+    .right-container {
+        order: 2;
+    }
+}
+@media only screen and (max-width: 450px) {
+    * {
+        text-align: center;
     }
 }
